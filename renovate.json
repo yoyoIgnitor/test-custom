@@ -3,14 +3,13 @@
   "enabledManagers": ["dockerfile", "regex"],
   "customManagers": [
     {
-    "fileMatch": ["^Makefile$"],
-    "matchStringsStrategy": "any",
-    "matchStrings": [
-    "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
-    ],
-    "datasourceTemplate": "docker",
-    "depNameTemplate": "docker.io"
-    
+      "fileMatch": ["^Makefile$"],
+      "matchStringsStrategy": "any",
+      "matchStrings": [
+        "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
+      ],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "docker.io"
     }
-    ]
-    }
+  ]
+}
