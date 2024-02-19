@@ -8,7 +8,7 @@
       "matchStrings": [
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
-      "datasourceTemplate": "docker",
+      "datasourceTemplate": "docker.io",
       "depNameTemplate": "docker.io"
     }
   ]
