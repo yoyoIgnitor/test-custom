@@ -9,7 +9,7 @@
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "docker",
-      "depNameTemplate": "docker.io"
+      "depNameTemplate": "docker"
     }
   ]
 }
