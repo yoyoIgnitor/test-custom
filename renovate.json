@@ -6,7 +6,7 @@
       "fileMatch": ["^Makefile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "PYTHON_BASE_IMAGE=(?<currentValue>.*?)"
+        "PYTHON_BASE_IMAGE=(?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "docker.io"
