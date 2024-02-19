@@ -1,3 +1,15 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
-}
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": ["dockerfile", "regex"],
+  "customManagers": [
+    {
+    "fileMatch": ["^Makefile$"],
+    "matchStringsStrategy": "any",
+    "matchStrings": [
+    "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
+    ],
+    "datasourceTemplate": "docker"
+    
+    }
+    ]
+    }

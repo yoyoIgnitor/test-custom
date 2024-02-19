@@ -2,13 +2,13 @@ include .env
 export
 all: init-dev build
 
-PYTHON_BASE_IMAGE=kiranrenovate.jfrog.io/docker-remote/python38:2.0.39
+PYTHON_BASE_IMAGE=docker.io/python:3.10
 
 uname_s := $(shell uname -s)
 ifeq ($(shell uname -s), Darwin)
 	ifeq ($(shell uname -p), arm)
 		M1_BUILD=true
-		PYTHON_BASE_IMAGE=kiranrenovate.jfrog.io/docker-remote/python:3.9-bullseye
+		PYTHON_BASE_IMAGE=docker.io/python:3.10
 	endif
 endif
 
