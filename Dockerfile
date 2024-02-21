@@ -32,7 +32,7 @@ COPY . /build/
 
 
 # Testing a scnerio
-FROM renotest.jfrog.io/artifactory/dev-docker-remote/quay.io/keycloak/keycloak:22.1.2 as builder
+FROM renotest.jfrog.io/dev-docker-remote/quay.io/keycloak/keycloak:22.1.2 as builder
 ARG APP_DIR_NAME
 ARG KC_PROVIDERS_PATH
 ARG KEYSTORE_PASSWORD
@@ -42,7 +42,7 @@ ENV KC_FEATURES="token-exchange,fips"
 ENV KC_FIPS_MODE="strict"
 ENV KC_DB=postgres
 
-COPY --from=renotest.jfrog.io/artifactory/dev-docker-remote/docker.io/kokuwaio/keycloak:22.1.2 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
+COPY --from=renotest.jfrog.io/dev-docker-remote/docker.io/kokuwaio/keycloak:22.1.2 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
 # General requirements
 RUN python3 -m pip install -U pip && pip3 install --ignore-installed --user \
     -r /build/requirements.txt \
