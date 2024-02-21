@@ -9,7 +9,7 @@
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "artifactory",
-      "depNameTemplate": "docker"
+      "depNameTemplate": "renotest.jfrog.io/artifactory/dev-docker-remote/"
     }
   ]
 }
