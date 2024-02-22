@@ -9,7 +9,7 @@
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "artifactory",
-      "registryUrlTemplate": "https://renotest.jfrog.io/dev-docker/python",
+      "registryUrlTemplate": "https://renotest.jfrog.io/dev-docker/",
       "versioningTemplate": "loose"
     },
     {
