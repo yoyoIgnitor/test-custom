@@ -8,7 +8,8 @@
       "matchStrings": [
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
-      "datasourceTemplate": "artifactory"
+      "datasourceTemplate": "artifactory",
+      "registryUrl": "renotest.jfrog.io"
       
     },
     {
