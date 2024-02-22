@@ -9,8 +9,8 @@
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "artifactory",
-      "registryUrl": "renotest.jfrog.io"
-      
+      "registryUrlTemplate": "https://renotest.jfrog.io/dev-docker/python",
+      "versioningTemplate": "loose"
     },
     {
       "fileMatch": ["(^|/)build\\.groovy$"],
