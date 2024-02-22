@@ -10,6 +10,15 @@
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "docker"
+    },
+    {
+      "fileMatch": ["(^|/)build\\.groovy$"],
+      "matchStringsStrategy": "any",
+      "matchStrings": [
+        "PYTHON_BASE_IMAGE\\=\\s(?<depName>.*?):(?<currentValue>.*?)\n"
+      ],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "docker"
     }
   ]
 }
