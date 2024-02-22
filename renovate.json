@@ -8,8 +8,8 @@
       "matchStrings": [
         "PYTHON_BASE_IMAGE=(?<depName>.*?):(?<currentValue>.*?)\n"
       ],
-      "datasourceTemplate": "docker",
-      "depNameTemplate": "docker"
+      "datasourceTemplate": "artifactory"
+      
     },
     {
       "fileMatch": ["(^|/)build\\.groovy$"],
