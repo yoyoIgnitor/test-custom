@@ -6,7 +6,7 @@
       "fileMatch": ["^Makefile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "PYTHON_BASE_IMAGE=\\/\\/renotest\\.jfrog\\/.io\\/dev-docker\\(?<depName>.*?):(?<currentValue>.*?)\n"
+        "PYTHON_BASE_IMAGE=\\/\\/renotest\\.jfrog\\.io\\/dev-docker/(?<depName>.*?):(?<currentValue>.*?)\\n"
       ],
       "datasourceTemplate": "artifactory",
       "registryUrlTemplate": "https://renotest.jfrog.io/dev-docker/python:",
